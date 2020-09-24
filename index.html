@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="./assets/custom-favicon.png"/>
+    <!-- Adding Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Rancho&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Lyrics!</title>
+  </head>
+  <body>
+    <div class="bg py-4">
+      <div class="container main-wrapper page-center">
+        <div class="text-center">
+          <h1 class="main-heading" data-shadow='dang!'>Welcome to the place </br> of Lyrics!</h1>
+          <div id="cover" class="my-4">
+            <form method="get" class="lyricsForm" action="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10"><input type="text" id="lyricsSearch" placeholder="Enter the artist or song name..." required></div>
+                  <div class="col-md-2">
+                    <button id="search-btn" type="submit">
+                      <svg style="font-size:1.5rem;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container listWrapper d-none py-3">
+          <div class="row">
+          </div>
+        </div>
+        <div class="container lyric-section">
+          <div class="row">
+            <div class="lyrics-page-wrapper d-none col-md-8 py-3">
+              <h1 class="lyrics-title text-center my-3"></h2>
+              <p class="lyrics-para text-center">
+              <h3 class="lyrics-artist my-2"></h4>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
